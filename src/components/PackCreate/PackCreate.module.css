@@ -1,0 +1,225 @@
+.mainContainer {
+  border: 1px solid transparent;
+  width: 100%;
+  height: 100vh;
+  background-image: url("../../assets/argentina_mountain_lake-Scenery_HD_Wallpaper_1366x768.jpg");
+  background-size: 100% 100%;
+  color: white;
+}
+
+.container {
+  height: 80vh;
+  display: flex;
+  margin: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+.packContainer {
+  margin: 10px;
+  height: 70vh;
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.formContainer {
+  margin: 10px;
+  border: 2px solid transparent;
+  border-radius: 20px;
+  height: 72.5vh;
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #0b132bff;
+  transition: 0.3s;
+}
+.formContainer:hover {
+  border: 2px solid rgba(255, 255, 255, 0.7);
+  transition: 0.3s;
+}
+
+.pack {
+  border: 2px solid transparent;
+  width: 21vw;
+  height: 73vh;
+  border-radius: 25px;
+  background-color: #0b132bff;
+  transition: 0.3s;
+}
+
+.pack:hover {
+  border: 2px solid rgba(255, 255, 255, 0.7);
+  transition: 0.3s;
+}
+
+.hotel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #3a506bff;
+  border-radius: 15px;
+  margin: 10px;
+  margin-top: 90px;
+}
+
+.hotel p {
+  margin-left: 10px;
+  font-size: 2vh;
+  margin-top: 8px;
+}
+
+.acts {
+  display: flex;
+  border-radius: 20px;
+  background-color: #1c2541ff;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+  height: 19vh;
+}
+
+.acts p {
+  font-size: 2vh;
+  border-radius: 20px;
+  background-color: #3a506bff;
+  padding: 3px 10px 3px 10px;
+  margin-top: 5px;
+}
+
+.actividades {
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+}
+
+.select {
+  border-radius: 10px;
+  margin: 3.5vh 1vh 3.5vh 1vh;
+  background-color: #1c2541ff;
+  padding: 1vh 0px 1vh 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 22vw;
+}
+
+.select label {
+  margin-right: 10px;
+  font-size: 1.6vh;
+  margin-left: 20px;
+}
+
+.select select {
+  font-size: 17px;
+  text-decoration: none;
+  border-radius: 5px;
+  outline: none;
+  background-color: #3a506bff;
+}
+
+.select select:hover {
+  cursor: pointer;
+}
+
+.paisDestino {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.paisDestino h1 {
+  background-color: #3a506bff;
+  font-size: 3vh;
+  border-radius: 15px;
+  padding: 0px 40px 5px 40px;
+  position: absolute;
+  top: 105px;
+}
+
+.paisDestino h2 {
+  font-size: 2vh;
+  position: absolute;
+  border-radius: 12px;
+  background-color: #3a506bff;
+  top: 162px;
+  padding: 5px 20px 5px 20px;
+}
+
+.tiempo {
+  display: flex;
+  justify-content: center;
+
+}
+
+.tiempo p {
+  border-radius: 5px;
+  margin-bottom: 10px;
+  font-size: 2vh;
+  margin-left: 10px;
+}
+
+.tiempo h5 {
+  margin-top: 3px;
+  font-size: 2vh;
+}
+
+.checkTxt h2 {
+  font-size: 19px;
+}
+
+.checkTxt {
+  width: 100%;
+  margin-left: 20px;
+  text-align: start;
+}
+
+.check {
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.checkbox{
+  text-align: start;
+
+}
+
+.checkbox input {
+  margin-left: 20px;
+}
+
+.checkbox input:hover {
+  cursor: pointer;
+}
+
+.precio h3 {
+  font-size: 2.2vh;
+  text-align: center;
+  margin-top: 6px;
+}
+
+.checkoutBtn {
+  text-align: center;
+  font-size: 22px;
+}
+
+.checkoutBtn button {
+  padding: 15px 200px 15px 200px;
+  border: 2px solid transparent;
+  border-radius: 20px;
+  background-color: #5bc0beff;
+  transition: 0.3s;
+}
+
+.checkoutBtn button:hover {
+  border: 2px solid rgba(255, 255, 255, 0.7);
+  background-color: #1c2541ff;
+  transition: 0.3s;
+}
+
+.precio h3{
+  font-size: 2vh;
+}
