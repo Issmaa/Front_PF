@@ -9,7 +9,7 @@ import Footer from '../../components/Footer/Footer';
 import fullData from '../dataFull.json';
 
 
-export default function Paquetes() {
+export default function Destinations() {
   /*ESTO SON PAISES Y NO PAQUETE. YA ESTA ACLARADO PERO NO LO CAMBIO POR SI LAS DUDAS*/
   const dispatch = useDispatch();
 
