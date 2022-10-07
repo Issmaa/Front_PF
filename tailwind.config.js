@@ -1,31 +1,28 @@
-/** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [
-    "./src/**/*.{js,jsx,ts,tsx}",
-  ],
+  content: ["./public/**/*.html", "./src/**/*.{js,jsx,ts,tsx,vue}"],
   theme: {
     extend: {
-      spacing: {
-        '127': '31rem',
-        '128': '32rem',
-        '129': '5.5rem'
+      colors: {
+        '1-color': '#0b132bff',
+        '2-color': '#1c2541ff',
+        '3-color': '#3a506bff',
+        '4-color': '#5bc0beff',
+        '5-color': '#6fffe9ff'
       },
       fontFamily: {
         "josefin": "'Josefin Sans', sans-serif",
         "nunito": "'Nunito', sans-serif"
       },
-      colors: {
-        "1-color": "var(--oxford-blue)",
-        "2-color": "var(--space-cadet)",
-        "3-color": "var(--y-in-mn-blue)",
-        "4-color": "var(--maximum-blue-green)",
-        "5-color": "var(--turquoise-blue)"
-      },
+      spacing: {
+        '127': '31rem',
+        '128': '32rem',
+        '129': '5.5rem'
+       },
       backgroundImage: (theme) => ({
-        'page-destinations': "url('/img/pageD.jpg')",
-        'rock-lake': "url('/img/bgM.jpg')"
+        'page-destinations': "url('/src/images/pageD.jpg')",
+        'rock-lake': "url('/src/images/bgM.jpg')"
       }),
-    },
+    }
   },
   plugins: [],
-}
+};
