@@ -1,0 +1,74 @@
+[
+  {
+    "pais": "Colombia",
+    "name": "Medellin",
+    "vuelos": "flybondi",
+    "fechaI": "5/1/23",
+    "fechaV": "9/1/23",
+    "img": "https://arc-anglerfish-arc2-prod-infobae.s3.amazonaws.com/public/EWRWZLV7FZEM7C24TIEPFBJCP4.jpg",
+    "hotel": "Gran Brizo",
+    "actividades": "Senderismo y rafting",
+    "servicios": "Desayuno",
+    "costo": "$50000"
+  },
+  {
+    "pais": "Colombia",
+    "name": "Bogota",
+    "vuelos": "flybondi",
+    "fechaI": "5/1/23",
+    "fechaV": "9/1/23",
+    "img": "https://arc-anglerfish-arc2-prod-infobae.s3.amazonaws.com/public/EWRWZLV7FZEM7C24TIEPFBJCP4.jpg",
+    "hotel": "Gran Brizo",
+    "actividades": "Senderismo y rafting",
+    "servicios": "Desayuno",
+    "costo": "$40000"
+  },
+  {
+    "pais": "Brasil",
+    "name": "Brasilia",
+    "vuelos": "flybondi",
+    "fechaI": "5/1/23",
+    "fechaV": "9/1/23",
+    "img": "https://arc-anglerfish-arc2-prod-infobae.s3.amazonaws.com/public/EWRWZLV7FZEM7C24TIEPFBJCP4.jpg",
+    "hotel": "Gran Brizo",
+    "actividades": "Senderismo y rafting",
+    "servicios": "Desayuno",
+    "costo": "$60000"
+  },
+  {
+    "pais": "Brasil",
+    "name": "Sao Pablo ",
+    "vuelos": "flybondi",
+    "fechaI": "5/1/23",
+    "fechaV": "9/1/23",
+    "img": "https://arc-anglerfish-arc2-prod-infobae.s3.amazonaws.com/public/EWRWZLV7FZEM7C24TIEPFBJCP4.jpg",
+    "hotel": "Gran Brizo",
+    "actividades": "",
+    "servicios": "Desayuno",
+    "costo": "$70000"
+  },
+  {
+    "pais": "Argentina",
+    "name": "Misiones",
+    "vuelos": "flybondi",
+    "fechaI": "5/1/23",
+    "fechaV": "9/1/23",
+    "img": "https://arc-anglerfish-arc2-prod-infobae.s3.amazonaws.com/public/EWRWZLV7FZEM7C24TIEPFBJCP4.jpg",
+    "hotel": "Gran Brizo",
+    "actividades": "Senderismo y rafting",
+    "servicios": "Desayuno",
+    "costo": "$80000"
+  },
+  {
+    "pais": "Argentina",
+    "name": "Buenos Aires",
+    "vuelos": "flybondi",
+    "fechaI": "5/1/23",
+    "fechaV": "9/1/23",
+    "img": "https://arc-anglerfish-arc2-prod-infobae.s3.amazonaws.com/public/EWRWZLV7FZEM7C24TIEPFBJCP4.jpg",
+    "hotel": "Gran Brizo",
+    "actividades": "Senderismo y rafting",
+    "servicios": "Desayuno",
+    "costo": "$10000"
+  }
+]

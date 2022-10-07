@@ -1,0 +1,39 @@
+.container-total-pack {
+  display: flex;
+  flex-direction: row;
+  background-color: #1c2541ff;
+  align-items: center;
+  margin: 10px;
+  cursor: pointer;
+  text-decoration: none;
+}
+.imgPacks {
+  width: 400px;
+  height: auto;
+}
+.precio-pack {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  height: auto;
+  width: auto;
+}
+.informacion-pack {
+  background-color: #1c2541ff;
+  display: flex;
+  width: auto;
+  flex-direction: column;
+  justify-content: flex-start;
+  color: white;
+  padding: 10px;
+}
+.precio-del-pack {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 50px;
+}
+.container-general {
+  background-color: #0b132b;
+}
