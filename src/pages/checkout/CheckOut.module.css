@@ -1,0 +1,19 @@
+.container{
+    border: 1px solid red;
+    height: 70vh;
+    display: flex;
+}
+
+.card{
+    border: 1px solid red;
+    height: 50vh;
+    width: 50%;
+    margin: 20px;
+}
+
+.info{
+    border: 1px solid red;
+    margin: 20px;
+    height: 50vh;
+    width: 50%;
+}

@@ -1,5 +1,5 @@
 import React from "react";
-import s from "./PackCreate.module.css";
+import s from "./PaqueteCreate.module.css";
 import { useState } from "react";
 
 export default function PackCreate() {
