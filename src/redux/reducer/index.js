@@ -6,6 +6,8 @@ import {
   GET_PACK_BY_ID,
   USER_LOGIN,
   USER_LOGOUT,
+  FILTRADO_POR_COSTO,
+  GET_ALL_PACKS,
 } from "../actions/actionsTypes";
 
 const initialState = {
@@ -70,6 +72,28 @@ export const rootReducer = (state = initialState, action) => {
       return {
         ...state,
         loginAccess: {},
+      };
+    case GET_ALL_PACKS:
+      return {
+        ...state,
+        packs: action.payload,
+      };
+    case FILTRADO_POR_COSTO:
+      const PackPorCosto =
+        action.payload === "caro"
+          ? state.packs.sort((h, l) => {
+              if (h.costo > l.costo) return -1;
+              if (l.costo > h.costo) return 1;
+              return 0;
+            })
+          : state.packs.sort((h, l) => {
+              if (h.costo > l.costo) return 1;
+              if (l.costo > h.costo) return -1;
+              return 0;
+            });
+      return {
+        ...state,
+        packs: PackPorCosto,
       };
     default:
       return {

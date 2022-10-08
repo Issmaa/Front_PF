@@ -5,6 +5,8 @@ import style from './NavBar.module.css';
 export default function NavBar() {
   return (
     <div className={style.globalContainer}>
+
+
     <nav className='flex justify-between bg-1-color'>
     <div className='text-zinc-100'>
       <a className='flex text-3xl font-sans font-medium text-zinc-100 items-center ml-1 hover:text-4-color transition ease-in duration-200 no-underline ' href='/'>

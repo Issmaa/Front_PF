@@ -4,6 +4,8 @@ import {
   GET_PACK_BY_ID,
   USER_LOGIN,
   USER_LOGOUT,
+  FILTRADO_POR_COSTO,
+  GET_ALL_PACKS
 } from "./actionsTypes";
 
 import { GET_CURRENT_USER } from "./actionsTypes";
@@ -15,6 +17,14 @@ export function getHotels() {
   return (dispatch) => {
     axios("http://localhost:5000/Hotel")
       .then((res) => dispatch({ type: GET_ALL_HOTEL, payload: res.data }))
+      .catch((error) => console.log(error));
+  };
+}
+
+export function getPacks() {
+  return (dispatch) => {
+    axios("http://localhost:5000/page-pack")
+      .then((res) => dispatch({ type: GET_ALL_PACKS, payload: res.data }))
       .catch((error) => console.log(error));
   };
 }
@@ -44,3 +54,10 @@ export const userLogin = (obj) => async (dispatch) => {
 export const userLogout = () => (dispatch) => {
   dispatch({ type: USER_LOGOUT });
 };
+
+export function filtradoPorCosto(payload) {
+  return {
+    type: FILTRADO_POR_COSTO,
+    payload,
+  };
+}
