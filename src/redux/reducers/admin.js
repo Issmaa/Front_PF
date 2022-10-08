@@ -1,11 +1,11 @@
 // import { ActionTypes } from "@mui/base";
-import { ADMIN_GET_ALL_PACKS } from "../actions/actionsTypes";
+import { ADMIN_GET_ALL_PACKS } from "../../admin/redux/actions/actionsTypes";
 
 const initialState = {
   adminAllUsers: [],
 };
 
-export const rootReducer = (state = initialState, action) => {
+export const adminReducer = (state = initialState, action) => {
   switch (action.type) {
     case ADMIN_GET_ALL_PACKS:
       return {

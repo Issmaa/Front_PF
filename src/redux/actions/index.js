@@ -10,14 +10,16 @@ import {
   FILTRADO_POR_COSTO,
 } from "./actionsTypes";
 
+
 import { GET_CURRENT_USER } from "./actionsTypes";
 import data from "../../data.json";
 
-const axios = require("axios");
+
+import axios from 'axios';
 
 export function getHotels() {
   return (dispatch) => {
-    axios("http://localhost:5000/Hotel")
+    axios("http://localhost:5000/hotel/Hotel")
       .then((res) => dispatch({ type: GET_ALL_HOTEL, payload: res.data }))
       .catch((error) => console.log(error));
   };
