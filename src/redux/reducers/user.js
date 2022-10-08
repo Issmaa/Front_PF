@@ -38,7 +38,7 @@ const initialState = {
   boolean: [],
 };
 
-export const rootReducer = (state = initialState, action) => {
+export const userReducer = (state = initialState, action) => {
   switch (action.type) {
     case GET_ALL_HOTEL:
       return {
