@@ -15,6 +15,8 @@ export default function Excursiones() {
   }, [dispatch]);
 
   const excursiones = useSelector((state) => state.excursiones);
+  console.log(excursiones);
+  console.log(excursiones[0].id);
 
   return (
     <div>
@@ -22,6 +24,7 @@ export default function Excursiones() {
       <SideBar />
       <BodyExcursiones />
       <CardExcursion excursionesInfo={excursiones} />
+      <div>Actividades en ese pais que quizas te gusten</div>
       <Footer />
     </div>
   );

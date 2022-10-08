@@ -1,11 +1,13 @@
+import dataPacks from "../../dataPacks.json";
+
 import {
   GET_ALL_EXCURSION,
   GET_ALL_HOTEL,
   GET_PACK_BY_ID,
   USER_LOGIN,
   USER_LOGOUT,
+  GET_ALL_PACKS,
   FILTRADO_POR_COSTO,
-  GET_ALL_PACKS
 } from "./actionsTypes";
 
 import { GET_CURRENT_USER } from "./actionsTypes";
@@ -20,12 +22,9 @@ export function getHotels() {
       .catch((error) => console.log(error));
   };
 }
-
 export function getPacks() {
   return (dispatch) => {
-    axios("http://localhost:5000/page-pack")
-      .then((res) => dispatch({ type: GET_ALL_PACKS, payload: res.data }))
-      .catch((error) => console.log(error));
+    dispatch({ type: GET_ALL_PACKS, payload: dataPacks });
   };
 }
 
