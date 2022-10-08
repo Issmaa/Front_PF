@@ -15,11 +15,13 @@ import Legales from "./pages/Legales/Legales";
 import PagePack from "./pages/Page-pack/PagePack";
 import CheckOut from "./pages/checkout/CheckOut";
 import SideBar from "./admin/SideBar/SideBar";
-import PackCreate from "./admin/components/Packs/PackCreate/PackCreate";
-import Menu from "./admin/components/Menu/Menu";
-import PackEdit from "./admin/components/Packs/PackEdit/PackEdit";
-import AllPacks from "./admin/components/Packs/AllPacks/AllPacks";
-import DeletePack from "./admin/components/Packs/DeletePack/DeletePack";
+import MenuAdmin from "./admin/components/Menu/MenuAdmin.jsx";
+import PacksAdmin from "./admin/components/Packs/PacksAdmin";
+import HotelsAdmin from "./admin/components/Hotels/HotelsAdmin";
+import UsersAdmin from "./admin/components/Users/UsersAdmin";
+import DestinationsAdmin from "./admin/components/Destinations/DestinationsAdmin";
+import SellsAdmin from "./admin/components/Sells/SellsAdmin";
+import ActivitiesAdmin from "./admin/components/Activities/ActivitiesAdmin";
 
 function App() {
   return (
@@ -38,24 +40,31 @@ function App() {
         <Route path="/legales" element={<Legales />} />
         <Route path="/page-pack" element={<PagePack />} />
         <Route path="/checkout" element={<CheckOut />} />
-
         {/* ---------------------ADMIN ROUTES------------------- */}
-        <Route path="/admin" element={<SideBar component={<Menu />} />} />
-        <Route
-          path="/admin/packs/create"
-          element={<SideBar component={<PackCreate />} />}
-        />{" "}
-        <Route
-          path="/admin/packs/edit"
-          element={<SideBar component={<PackEdit />} />}
-        />
+        <Route path="/admin" element={<SideBar component={<MenuAdmin />} />} />
         <Route
           path="/admin/packs"
-          element={<SideBar component={<AllPacks />} />}
+          element={<SideBar component={<PacksAdmin />} />}
+        />{" "}
+        <Route
+          path="/admin/users"
+          element={<SideBar component={<UsersAdmin />} />}
         />
         <Route
-          path="/admin/packs/delete"
-          element={<SideBar component={<DeletePack />} />}
+          path="/admin/hotels"
+          element={<SideBar component={<HotelsAdmin />} />}
+        />
+        <Route
+          path="/admin/sells"
+          element={<SideBar component={<SellsAdmin />} />}
+        />
+        <Route
+          path="/admin/destinations"
+          element={<SideBar component={<DestinationsAdmin />} />}
+        />
+        <Route
+          path="/admin/activities"
+          element={<SideBar component={<ActivitiesAdmin />} />}
         />
       </Routes>
     </div>
