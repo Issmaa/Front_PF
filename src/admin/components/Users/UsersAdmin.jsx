@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Table from "react-bootstrap/Table";
 import s from "./UsersAdmin.module.css";
 import { useEffect } from "react";
@@ -6,15 +6,18 @@ import { useSelector, useDispatch } from "react-redux";
 import { adminGetAllCustomers } from "../../redux/actions";
 
 export default function Users() {
+
   const dispatch = useDispatch();
-  const adminAllUsers = useSelector((state) => state.adminAllPacks);
+  const adminAllUsers = useSelector((state) => state.adminAllUsers);
 
-  console.log(adminAllUsers)
+  const [users,setUsers] = useState([])
 
+  
   useEffect(() => {
     dispatch(adminGetAllCustomers())
-  },[dispatch])
+  },[])
 
+  console.log(adminAllUsers)
 
   return (
     <div className={s.container}>
