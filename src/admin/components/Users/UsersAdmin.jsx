@@ -1,9 +1,9 @@
 import React from "react";
 
-export default function PackEdit() {
+export default function Users() {
   return (
     <div>
-      <h1>Pack Edit</h1>
+      <h1>Users</h1>
     </div>
   );
 }
