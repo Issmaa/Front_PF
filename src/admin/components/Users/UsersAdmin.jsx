@@ -3,21 +3,21 @@ import Table from "react-bootstrap/Table";
 import s from "./UsersAdmin.module.css";
 import { useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
-import { adminGetAllCustomers } from "../../redux/actions";
+import {adminGetAllCustomers} from '../../redux/actions/index'
+
 
 export default function Users() {
 
   const dispatch = useDispatch();
-  const adminAllUsers = useSelector((state) => state.adminAllUsers);
-
-  const [users,setUsers] = useState([])
-
-  
+  // TE DEBES DE TRAER EL ESTADO DEL COMBINEREDUCER EN EL ARCHIVO redux/reducers/index.js
+  const admin = useSelector(state => state.admin);
+ 
   useEffect(() => {
     dispatch(adminGetAllCustomers())
   },[])
 
-  console.log(adminAllUsers)
+  //YA TRAE LOS DATOS :) Att: Issmaa
+  console.log(admin.adminAllUsers)
 
   return (
     <div className={s.container}>
@@ -32,6 +32,9 @@ export default function Users() {
             </tr>
           </thead>
           <tbody>
+            {admin.adminAllUsers?.map((e,i) => i % 3 === 0 ? <tr></tr> : <td>{e.name}</td>
+            )}
+              
             <tr>
               <td>1</td>
               <td>Mark</td>

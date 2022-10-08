@@ -1,10 +1,10 @@
 import { userReducer } from './user'
-import { adminGetAllCustomers } from '../../admin/redux/actions'
+import { adminReducer } from '../reducers/admin';
 import {combineReducers} from 'redux'
 
 
 const allReducers = combineReducers({
     user: userReducer,
-    admin: adminGetAllCustomers
+    admin: adminReducer
 })
 export default allReducers
