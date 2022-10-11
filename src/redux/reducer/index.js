@@ -7,6 +7,7 @@ import {
   USER_LOGOUT,
   FILTRADO_POR_COSTO,
   GET_ALL_PACKS,
+  SEARCH_EXCURSIONES_PAIS,
 } from "../actions/actionsTypes";
 
 const initialState = {
@@ -14,6 +15,7 @@ const initialState = {
   packs: [],
   excursiones: [
     {
+      pais: "Argentina",
       id: 1,
       name: "Montañismo",
       info: "Se trata de la disciplina, en general deportiva o recreativa, que consiste en la realización del ascenso y descenso de montañas. Es también el conjunto de técnicas, conocimientos y Destreza o habilidades orientadas a la realización de este objetivo",
@@ -23,6 +25,7 @@ const initialState = {
       DiaF: "5/9/23",
     },
     {
+      pais: "Bogota",
       id: 2,
       name: "Senderismo",
       info: "El senderismo busca acercar a las personas al medio natural y al conocimiento de la zona a través del patrimonio y los elementos etnográficos y culturales tradicionales, utilizando especialmente senderos de tierra, antiguos caminos de herradura y carreteros, cañadas y caminos reales, caminos forestales y otros, evitando en lo posible el tránsito a través de rutas asfaltadas u hormigonadas.",
@@ -76,6 +79,11 @@ export const rootReducer = (state = initialState, action) => {
       return {
         ...state,
         packs: action.payload,
+      };
+    case SEARCH_EXCURSIONES_PAIS:
+      return {
+        ...state,
+        excursiones: action.payload,
       };
     case FILTRADO_POR_COSTO:
       const PackPorCosto =

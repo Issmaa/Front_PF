@@ -1,9 +1,9 @@
-// import "./CardHotel.css";
+import "./CardHotel.css";
 import { Link } from "@mui/material";
 export default function CardHotel() {
   return (
-    <div>
-      <Link to='' className="pack">
+    <div className="Container_all_cardExc">
+      <Link to="" className="pack">
         <div className="imgPackCardTotal">
           <img
             className="imagenCardPack"

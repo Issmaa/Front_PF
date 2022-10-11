@@ -8,6 +8,10 @@ import {
   USER_LOGOUT,
   GET_ALL_PACKS,
   FILTRADO_POR_COSTO,
+  GET_ACTIVITY_COUNTRY,
+  GET_EXCURSION_ID,
+  GET_ACTIVITY_ID,
+  GET_ACTIVITY_CITY,
 } from "./actionsTypes";
 
 import { GET_CURRENT_USER } from "./actionsTypes";
@@ -30,8 +34,15 @@ export function getPacks() {
 
 export function getExcursiones() {
   return (dispatch) => {
-    axios("http://localhost:5000/excursiones")
+    axios("http://localhost:5000/excursions")
       .then((res) => dispatch({ type: GET_ALL_EXCURSION, payload: res.data }))
+      .catch((error) => console.log(error));
+  };
+}
+export function getExcursionesbyID(id) {
+  return (dispatch) => {
+    axios("http://localhost:5000/findExcursionId", id)
+      .then((res) => dispatch({ type: GET_EXCURSION_ID, payload: res.data }))
       .catch((error) => console.log(error));
   };
 }
